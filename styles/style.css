@@ -1,1 +1,80 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.intro {
+  position: relative;
+  background-color: #141730;
+  color: #F9F8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.splash-screen {
+  background-image: radial-gradient(circle, #333653, #21243E, #141730);
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 1.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splash-screen .splash-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 150px;
+}
+.splash-screen .splash-container #logo {
+  position: absolute;
+  opacity: 0;
+  margin-top: -150px;
+  transform: translate(-50%, -50%);
+}
+.splash-screen .splash-container #logo.active {
+  opacity: 1;
+  margin-top: 0;
+  transition: 1s;
+}
+.splash-screen .splash-container #logo-text {
+  position: absolute;
+  animation: fill 3s ease forwards 2s;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+}
+.splash-screen .splash-container #logo-text.active {
+  margin-top: 150px;
+  transition: 1s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #F9F8FF;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */
