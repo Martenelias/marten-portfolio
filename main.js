@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Update the burger span colors based on the menu state
     burgerSpan.forEach((span) => {
       const newSpan = span;
-      newSpan.style.backgroundColor = isOpen ? '#141730' : '#F9F8FF';
+      newSpan.style.backgroundColor = isOpen ? '#E5E0DA' : '#2F4858';
     });
   });
   navLinks.forEach((link) => {
@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       burgerSpan.forEach((span) => {
         const newSpan = span;
-        newSpan.style.backgroundColor = '#F9F8FF';
+        newSpan.style.backgroundColor = '#E5E0DA';
       });
     });
   });

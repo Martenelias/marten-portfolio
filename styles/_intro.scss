@@ -7,8 +7,8 @@ nav {
   left: -100vw;
   width: 100%;
   height: 100vh;
-  background-color: $light;
-  color: $dark;
+  background-color: $dark;
+  color: $light;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -31,11 +31,12 @@ nav {
       text-decoration: none;
       font-size: 40px;
       transition: 0.5s;
-      color: $dark;
+      color: $light;
       @include font-body(500);
 
       &:hover {
-        color: $blue;
+        color: $green;
+        letter-spacing: 5px;
       }
     }
   }
@@ -57,7 +58,7 @@ nav {
     position: absolute;
     z-index: 150;
     height: 2px;
-    background: $light;
+    background: $dark;
     border-radius: 2px;
     left: 0;
     transform: rotate(0deg);
@@ -83,7 +84,7 @@ nav {
     transform: rotate(45deg);
     top: 0;
     left: 8px;
-    background: $dark
+    background: $light;
   }
   .hamburger.open span:nth-child(2) {
     width: 0%;
@@ -94,7 +95,7 @@ nav {
     top: 0;
     left: 8px;
     width: 45px;
-    background: $dark;
+    background: $light;
   }
 
 .intro {
@@ -102,99 +103,62 @@ nav {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  background-color: $dark;
-  color: $light;
+  color: $dark;
   @include flex;
+  @include font-header;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
 
-  .top-contact-logo {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    padding-top: 40px;
+  .top-my-name-container {
+    position: absolute;
+    z-index: 2;
+    top: 0;
     width: 100%;
     height: 100vh;
 
-    .top-contact {
+    .top-my-name {
+      width: 100%;
+      height: 100vh;
+      padding: 50px;
+      font-size: 8vw;
+      text-align: end;
       display: flex;
       justify-content: flex-end;
-      margin-right: 50px;
-      width: 100%;
-
-      a {
-        text-decoration: none;
-        color: $light;
-        background-color: $blue;
-        border-radius: 5px;
-        font-size: 16px;
-        padding: 10px 20px;
-        @include font-body(500);
-        transition: 1s;
-
-        &:hover {
-          background-color: $light;
-          color: $blue;
-          letter-spacing: 3px;
-        }
-      }
-    }
-
-    .top-logo-container {
-      @include flex;
-      width: 100%;
-
-      span {
-        height: 2px;
-        background-color: $light;
-        flex: 1;
-      }
-
-      #top-logo {
-        flex-shrink: 0;
-        margin: 0 20px;
-        width: 5vw;
-      }
+      align-items: flex-start;
     }
   }
-  .developer-container {
-    @include font-header;
+  .center-logo-container {
+
+    @include flex;
     position: absolute;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-top: 100px;
-    height: 90%;
-    width: 100%;
     top: 0;
+    width: 100%;
+    height: 100vh;
 
-    .web {
-      font-size: 10vw;
-      letter-spacing: -2px;
-      left: 0;
-      padding: 2vh 7vw;
-      background-color: $blue;
-      color: $light;
-      transition: 1s ease-in-out;
-
-      &:hover {
-        margin-left: 5%;
-        cursor: pointer;
-      }
+    #center-logo {
+      width: 160px;
+      height: 70px;
     }
+  }
+  .bottom-title-container {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100vh;
 
-    .developer {
-      color: $light;
-      font-size: 21vw;
-      letter-spacing: -5px;
-      @include flex;
+    .bottom-title {
+      padding: 50px;
       width: 100%;
-      height: auto;
+      height: 100vh;
+      font-size: 8vw;
+      text-align: start;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
     }
   }
 }

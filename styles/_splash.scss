@@ -1,7 +1,7 @@
 @import './var-fonts-mix';
 
 .splash-screen {
-  background-image: radial-gradient(circle, #333653, #21243E, #141730);
+  background-image: radial-gradient(circle, #253642, #1A2730);
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -21,6 +21,8 @@
       position: absolute;
       opacity: 0;
       margin-top: -150px;
+      width: 295px;
+      height: 170px;
       transform: translate(-50%, -50%);
 
       &.active {
@@ -35,6 +37,8 @@
       animation: fill 3s ease forwards 2s;
       transform: translate(-50%, -50%);
       margin-top: 0;
+      width: 297px;
+      height: 52px;
 
       &.active {
         margin-top: 150px;
