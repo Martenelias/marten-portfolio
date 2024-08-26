@@ -3,4 +3,106 @@
 .projects {
   color: $dark;
   height: 300vh;
+
+  .projects-container {
+    overflow: hidden;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+
+    h2 {
+      font-size: 8vw;
+      padding: 50px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      @include font-header;
+    }
+
+    .projects-box {
+      position: absolute;
+      top: 0;
+      width: 300vw;
+      height: 100%;
+      will-change: transform;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px;
+
+      .projects {
+        border: 1px solid black;
+        width: 90vw;
+        height: 90vh;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .left-side {
+          @include font-body(600);
+          width: 30%;
+          height: 100%;
+          padding-bottom: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+          .left-side-up {
+            width: 100%;
+            height: auto;
+
+            .left-side-text {
+              margin-bottom: 20px;
+            }
+
+            .left-side-lang {
+              color: $green;
+            }
+
+          }
+
+          .left-side-down {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            a {
+              text-decoration: none;
+              color: $dark;
+              font-size: 30px;
+              width: 50%;
+              height: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              @include font-body(600);
+              transition: 1s ease-in-out;
+
+              &:hover {
+                letter-spacing: 5px;
+                width: 70%;
+                color: $green;
+              }
+            }
+
+            .arrow {
+              font-size: 50px;
+              height: 100%;
+              @include flex;
+            }
+          }
+        }
+        .right-side {
+          border: 1px solid red;
+          width: 70%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
 }

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 nav {
   position: fixed;
   z-index: 100;
@@ -225,6 +226,112 @@ nav ul li a:hover {
 .projects {
   color: #1a2730;
   height: 300vh;
+}
+.projects .projects-container {
+  overflow: hidden;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+}
+.projects .projects-container h2 {
+  font-size: 8vw;
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.projects .projects-container .projects-box {
+  position: absolute;
+  top: 0;
+  width: 300vw;
+  height: 100%;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.projects .projects-container .projects-box .projects {
+  border: 1px solid black;
+  width: 90vw;
+  height: 90vh;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .projects-container .projects-box .projects .left-side {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  width: 30%;
+  height: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-up {
+  width: 100%;
+  height: auto;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-up .left-side-text {
+  margin-bottom: 20px;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-up .left-side-lang {
+  color: #6d847f;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-down {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-down a {
+  text-decoration: none;
+  color: #1a2730;
+  font-size: 30px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  transition: 1s ease-in-out;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-down a:hover {
+  letter-spacing: 5px;
+  width: 70%;
+  color: #6d847f;
+}
+.projects .projects-container .projects-box .projects .left-side .left-side-down .arrow {
+  font-size: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .projects-container .projects-box .projects .right-side {
+  border: 1px solid red;
+  width: 70%;
+  height: 100%;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {

@@ -6,6 +6,7 @@ const menuToggle = document.querySelector('.hamburger');
 const burgerSpan = document.querySelectorAll('.hamburger span');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('nav ul li a');
+const stickySection = document.querySelector('.projects');
 
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
@@ -53,5 +54,21 @@ window.addEventListener('DOMContentLoaded', () => {
         newSpan.style.backgroundColor = '#E5E0DA';
       });
     });
+  });
+
+  const transform = (section) => {
+    const offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const scrollSection = section.querySelector('.projects-box');
+    let precentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+    if (precentage < 0) {
+      precentage = 0;
+    } else if (precentage > 400) {
+      precentage = 400;
+    }
+    scrollSection.style.transform = `translate3d(${-(precentage)}vw, 0, 0)`;
+  };
+
+  window.addEventListener('scroll', () => {
+    transform(stickySection);
   });
 });
