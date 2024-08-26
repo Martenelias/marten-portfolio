@@ -255,15 +255,14 @@ nav ul li a:hover {
   align-items: center;
   padding: 100px;
 }
-.projects .projects-container .projects-box .projects {
-  border: 1px solid black;
+.projects .projects-container .projects-box .projects-all {
   width: 90vw;
   height: 90vh;
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
 }
-.projects .projects-container .projects-box .projects .left-side {
+.projects .projects-container .projects-box .projects-all .left-side {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -276,28 +275,29 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-up {
+.projects .projects-container .projects-box .projects-all .left-side .left-side-up {
   width: 100%;
   height: auto;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-up .left-side-text {
+.projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-text {
   margin-bottom: 20px;
+  font-size: 20px;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-up .left-side-lang {
+.projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-lang {
   color: #6d847f;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-down {
+.projects .projects-container .projects-box .projects-all .left-side .left-side-down {
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-down a {
+.projects .projects-container .projects-box .projects-all .left-side .left-side-down a {
   text-decoration: none;
   color: #1a2730;
-  font-size: 30px;
-  width: 50%;
+  font-size: 20px;
+  padding: 5px 15px;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -307,23 +307,61 @@ nav ul li a:hover {
   font-weight: 600;
   font-style: normal;
   transition: 1s ease-in-out;
+  border: 2px solid #1a2730;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-down a:hover {
+.projects .projects-container .projects-box .projects-all .left-side .left-side-down a:hover {
   letter-spacing: 5px;
-  width: 70%;
-  color: #6d847f;
+  color: #E5E0DA;
+  background-color: #1a2730;
 }
-.projects .projects-container .projects-box .projects .left-side .left-side-down .arrow {
-  font-size: 50px;
-  height: 100%;
+.projects .projects-container .projects-box .projects-all .right-side {
+  padding-bottom: 50px;
+  width: 70%;
+  height: 80%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
-.projects .projects-container .projects-box .projects .right-side {
-  border: 1px solid red;
+.projects .projects-container .projects-box .projects-all .right-side h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  font-size: 4vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.projects .projects-container .projects-box .projects-all .right-side .images {
   width: 70%;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.projects .projects-container .projects-box .projects-all .right-side .images .img-big {
+  border: 4px solid #1a2730;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+.projects .projects-container .projects-box .projects-all .right-side .images .img-small {
+  border: 4px solid #1a2730;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 30%;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -100px;
+  margin-right: -50px;
 }
 
 .about {
@@ -347,6 +385,30 @@ body {
   background-color: #E5E0DA;
 }
 
+@media screen and (max-width: 1200px) {
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-down a {
+    font-size: 12px;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-down a:hover {
+    letter-spacing: 3px;
+  }
+  .projects .projects-container .projects-box .projects-all .right-side h3 {
+    justify-content: center;
+  }
+  .projects .projects-container .projects-box .projects-all .right-side .images .img-big {
+    border: 3px solid #1a2730;
+  }
+  .projects .projects-container .projects-box .projects-all .right-side .images .img-small {
+    border: 3px solid #1a2730;
+    margin-bottom: -50px;
+    margin-right: -20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .hamburger {
     margin: 20px;
@@ -356,6 +418,27 @@ body {
   }
   .intro .top-contact-logo {
     padding-top: 20px;
+  }
+  .projects .projects-container .projects-box {
+    padding: 20px;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-text, .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-lang {
+    font-size: 12px;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-down a {
+    font-size: 12px;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-down a:hover {
+    letter-spacing: 0;
+  }
+  .projects .projects-container .projects-box .projects-all .right-side .images .img-big {
+    border: 2px solid #1a2730;
+  }
+  .projects .projects-container .projects-box .projects-all .right-side .images .img-small {
+    border: 2px solid #1a2730;
+    border-radius: 10px;
+    margin-bottom: -20px;
+    margin-right: -10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -394,5 +477,17 @@ body {
   .intro .top-contact-logo .top-contact a {
     font-size: 10px;
     padding: 5px 10px;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-text, .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-lang {
+    font-size: 8px;
+  }
+  .projects .projects-container .projects-box .projects-all {
+    padding: 50px 0;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-down a {
+    font-size: 8px;
+  }
+  .projects .projects-container h2 {
+    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

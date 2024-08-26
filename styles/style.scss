@@ -17,6 +17,39 @@ body {
   background-color: $light;
 }
 
+@media screen and (max-width: 1200px) {
+  .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .projects .projects-container .projects-box
+    .projects-all .left-side .left-side-down {
+    a {
+      font-size: 12px;
+      &:hover {
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .projects .projects-container .projects-box .projects-all .right-side {
+    h3 {
+      justify-content: center;
+    }
+    .images {
+      .img-big {
+        border: 3px solid $dark;
+      }
+      .img-small {
+        border: 3px solid $dark;
+        margin-bottom: -50px;
+        margin-right: -20px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hamburger {
     margin: 20px;
@@ -26,6 +59,34 @@ body {
   }
   .intro .top-contact-logo {
     padding-top: 20px;
+  }
+  .projects .projects-container .projects-box {
+    padding: 20px;
+
+    .projects-all .left-side .left-side-up {
+      .left-side-text, .left-side-lang {
+        font-size: 12px;
+      }
+    }
+    .projects-all .left-side .left-side-down {
+      a {
+        font-size: 12px;
+        &:hover {
+          letter-spacing: 0;
+        }
+      }
+    }
+    .projects-all .right-side .images {
+      .img-big {
+        border: 2px solid $dark;
+      }
+      .img-small {
+        border: 2px solid $dark;
+        border-radius: 10px;
+        margin-bottom: -20px;
+        margin-right: -10px;
+      }
+    } 
   }
 }
 
@@ -69,6 +130,24 @@ body {
       padding: 5px 10px;
     }
   }
-  
-  
+  .projects .projects-container .projects-box {
+
+    .projects-all .left-side .left-side-up {
+      .left-side-text, .left-side-lang {
+        font-size: 8px;
+      }
+    }
+    .projects-all {
+      padding: 50px 0;
+
+      .left-side .left-side-down {
+        a {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .projects .projects-container h2 {
+    padding: 20px;
+  }
 }
