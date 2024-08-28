@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 nav {
   position: fixed;
   z-index: 100;
@@ -367,9 +368,114 @@ nav ul li a:hover {
 .about {
   height: 100vh;
   width: 100%;
+  padding: 100px;
+  color: #1a2730;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+.about .about-me {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.about .about-me .about-me-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.about .about-me .tech {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.about .about-me .tech p {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #6d847f;
+  cursor: pointer;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.about .about-me .tech p:hover {
+  letter-spacing: 2px;
+}
+.about h2 {
+  width: 100%;
+  height: 40%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 7vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.contact {
+  width: 100%;
+  height: 90vh;
+  padding: 100px;
+  color: #1a2730;
+  display: flex;
+  flex-direction: column;
+}
+.contact .my-email-copy {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.contact .lets-connect {
+  border: 1px solid green;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+footer .copy-myname {
+  font-size: 20px;
+  color: #1a2730;
+}
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .links a {
+  text-decoration: none;
+  color: #1a2730;
+  transition: 0.5s ease-in-out;
+}
+footer .links a:hover {
+  color: #6d847f;
+  letter-spacing: 2px;
 }
 
 * {
@@ -440,6 +546,16 @@ body {
     margin-bottom: -20px;
     margin-right: -10px;
   }
+  .about {
+    padding: 50px;
+  }
+  .about .about-me .about-me-text {
+    font-size: 12px;
+  }
+  .about .about-me .tech p {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
 @media screen and (max-width: 480px) {
   .splash-screen .splash-container {
@@ -478,16 +594,46 @@ body {
     font-size: 10px;
     padding: 5px 10px;
   }
-  .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-text, .projects .projects-container .projects-box .projects-all .left-side .left-side-up .left-side-lang {
-    font-size: 8px;
-  }
   .projects .projects-container .projects-box .projects-all {
-    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .projects .projects-container .projects-box .projects-all .left-side {
+    top: 0;
+    order: 2;
+    width: 100%;
+    height: 100%;
   }
   .projects .projects-container .projects-box .projects-all .left-side .left-side-down a {
-    font-size: 8px;
+    padding: 10px 10px;
+  }
+  .projects .projects-container .projects-box .projects-all .right-side {
+    order: 1;
+    width: 100%;
+    height: 50%;
   }
   .projects .projects-container h2 {
     padding: 20px;
+  }
+  .about {
+    padding: 30px;
+  }
+  .about .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about .about-me .about-me-text {
+    font-size: 8px;
+    padding-top: 30px;
+    order: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .about .about-me .tech {
+    order: 2;
+    width: 100%;
+    font-size: 6px;
   }
 }/*# sourceMappingURL=style.css.map */
