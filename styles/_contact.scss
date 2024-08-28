@@ -8,22 +8,62 @@
   display: flex;
   flex-direction: column;
 
-  .my-email-copy {
-    border: 1px solid red;
+  .my-email-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+
+    .my-email-copy {
+      width: 70%;
+      @include font-body(600);
+      color: $dark;
+      height: 100%;
+
+      .copy-email-name {
+        font-size: 5vw;
+        text-align: right;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: $green;
+          text-decoration-color: $green;
+        }
+        &:hover + .click-email {
+          display: block;
+        }
+      }
+      .click-email {
+        display: none;
+        text-align: center;
+        margin-left: 75%;
+        margin-top: 10px;
+        transform: translate(-50%);
+        font-size: 1vw;
+        width: 200px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: $dark;
+        color: $light;
+
+      }
+    }
   }
 
   .lets-connect {
-    border: 1px solid green;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 
+    .lets-connect-text {
+      font-size: 7vw;
+      @include font-header;
+    }
   }
 
 }

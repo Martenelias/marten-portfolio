@@ -7,6 +7,7 @@ const burgerSpan = document.querySelectorAll('.hamburger span');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('nav ul li a');
 const stickySection = document.querySelector('.projects');
+const emailElement = document.querySelector('.copy-email-name');
 
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
@@ -70,5 +71,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     transform(stickySection);
+  });
+
+  emailElement.addEventListener('click', () => {
+    const emailText = emailElement.innerText.replace(/\n/g, '');
+    const tempInput = document.createElement('textarea');
+
+    tempInput.value = emailText;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
   });
 });
