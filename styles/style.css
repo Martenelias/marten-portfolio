@@ -470,7 +470,7 @@ nav ul li a:hover {
   margin-top: 10px;
   transform: translate(-50%);
   font-size: 1vw;
-  width: 200px;
+  width: 20vw;
   padding: 10px;
   border-radius: 20px;
   background-color: #1a2730;
@@ -597,6 +597,12 @@ body {
     font-size: 10px;
     padding: 5px;
   }
+  footer .copy-myname {
+    font-size: 14px;
+  }
+  footer .links a {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .splash-screen .splash-container {
@@ -676,5 +682,23 @@ body {
     order: 2;
     width: 100%;
     font-size: 6px;
+  }
+  .contact {
+    padding: 100px 30px;
+  }
+  footer {
+    padding: 20px 30px;
+  }
+  footer .copy-myname {
+    font-size: 8px;
+  }
+  footer .links {
+    gap: 10px;
+  }
+  footer .links a {
+    font-size: 8px;
+  }
+  footer .links a:hover {
+    letter-spacing: 0;
   }
 }/*# sourceMappingURL=style.css.map */

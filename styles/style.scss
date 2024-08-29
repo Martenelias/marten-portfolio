@@ -103,6 +103,16 @@ body {
       }
     }
   }
+  footer {
+    .copy-myname {
+      font-size: 14px;
+    }
+    .links {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -190,6 +200,25 @@ body {
         order: 2;
         width: 100%;
         font-size: 6px;
+      }
+    }
+  }
+  .contact {
+    padding: 100px 30px;
+  }
+  footer {
+    padding: 20px 30px;
+    .copy-myname {
+      font-size: 8px;
+    }
+    .links {
+      gap: 10px;
+      a {
+        font-size: 8px;
+
+        &:hover {
+          letter-spacing: 0;
+        }
       }
     }
   }

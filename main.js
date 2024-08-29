@@ -39,7 +39,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const isOpen = menuToggle.classList.contains('open');
 
-    // Update the burger span colors based on the menu state
     burgerSpan.forEach((span) => {
       const newSpan = span;
       newSpan.style.backgroundColor = isOpen ? '#E5E0DA' : '#2F4858';
@@ -52,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       burgerSpan.forEach((span) => {
         const newSpan = span;
-        newSpan.style.backgroundColor = '#E5E0DA';
+        newSpan.style.backgroundColor = '#2F4858';
       });
     });
   });
