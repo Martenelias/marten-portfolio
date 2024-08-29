@@ -10,6 +10,7 @@ const stickySection = document.querySelector('.projects');
 const emailElement = document.querySelector('.copy-email-name');
 
 window.addEventListener('DOMContentLoaded', () => {
+  // Splash screen logo animation
   setTimeout(() => {
     logoPath.forEach((pathElement, index) => {
       const path = pathElement;
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 6500);
   });
 
+  // Hamburger menu open/close and animation
   menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
     menuToggle.classList.toggle('open');
@@ -56,6 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Projects horizontal scrolling effect
   const transform = (section) => {
     const offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
     const scrollSection = section.querySelector('.projects-box');
@@ -72,6 +75,7 @@ window.addEventListener('DOMContentLoaded', () => {
     transform(stickySection);
   });
 
+  // Email address copy to clipboard
   emailElement.addEventListener('click', () => {
     const emailText = emailElement.innerText.replace(/\n/g, '');
     const tempInput = document.createElement('textarea');
