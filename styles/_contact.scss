@@ -1,0 +1,99 @@
+@import './var-fonts-mix';
+
+.contact {
+  width: 100%;
+  height: 90vh;
+  padding: 100px;
+  color: $dark;
+  display: flex;
+  flex-direction: column;
+
+  .my-email-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .my-email-copy {
+      width: 70%;
+      @include font-body(600);
+      color: $dark;
+      height: 100%;
+
+      .copy-email-name {
+        font-size: 4vw;
+        text-align: right;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: $green;
+          text-decoration-color: $green;
+        }
+        &:hover + .click-email {
+          display: block;
+        }
+      }
+      .click-email {
+        display: none;
+        text-align: center;
+        margin-left: 75%;
+        margin-top: 10px;
+        transform: translate(-50%);
+        font-size: 1vw;
+        width: 20vw;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: $dark;
+        color: $light;
+
+      }
+    }
+  }
+
+  .lets-connect {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    .lets-connect-text {
+      font-size: 5vw;
+      @include font-header;
+    }
+  }
+
+}
+
+footer {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include font-body(600);
+
+  .copy-myname {
+    font-size: 20px;
+    color: $dark;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: $dark;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        color: $green;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
