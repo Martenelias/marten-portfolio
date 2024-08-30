@@ -371,57 +371,33 @@ nav ul li a:hover {
   padding: 100px;
   color: #1a2730;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .about .about-me {
-  height: 60%;
-  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  height: 100%;
+  width: 40%;
+  right: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .about-me h3 {
+  font-size: 3vw;
+  text-align: right;
+  padding-bottom: 1vh;
 }
 .about .about-me .about-me-text {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
-  width: 50%;
-  height: 100%;
-  display: flex;
-}
-.about .about-me .tech {
-  display: flex;
-  gap: 2vw;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 30%;
-}
-.about .about-me .tech p {
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: #6d847f;
-  cursor: pointer;
-  left: 0;
-  transition: 0.5s ease-in-out;
-}
-.about .about-me .tech p:hover {
-  letter-spacing: 2px;
-}
-.about h2 {
-  width: 100%;
-  height: 40%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 7vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  font-size: 1.2vw;
+  text-align: justify;
 }
 
 .contact {
@@ -449,7 +425,7 @@ nav ul li a:hover {
   height: 100%;
 }
 .contact .my-email-container .my-email-copy .copy-email-name {
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: right;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -483,7 +459,7 @@ nav ul li a:hover {
   align-items: flex-end;
 }
 .contact .lets-connect .lets-connect-text {
-  font-size: 7vw;
+  font-size: 5vw;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -587,15 +563,8 @@ body {
     margin-bottom: -20px;
     margin-right: -10px;
   }
-  .about {
-    padding: 50px;
-  }
-  .about .about-me .about-me-text {
-    font-size: 12px;
-  }
-  .about .about-me .tech p {
-    font-size: 10px;
-    padding: 5px;
+  .about .about-me {
+    width: 60%;
   }
   footer .copy-myname {
     font-size: 14px;
@@ -667,21 +636,7 @@ body {
     padding: 30px;
   }
   .about .about-me {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .about .about-me .about-me-text {
-    font-size: 8px;
-    padding-top: 30px;
-    order: 1;
-    width: 100%;
-    height: 100%;
-  }
-  .about .about-me .tech {
-    order: 2;
-    width: 100%;
-    font-size: 6px;
+    width: 80%;
   }
   .contact {
     padding: 100px 30px;
@@ -696,7 +651,7 @@ body {
     gap: 10px;
   }
   footer .links a {
-    font-size: 8px;
+    font-size: 6px;
   }
   footer .links a:hover {
     letter-spacing: 0;

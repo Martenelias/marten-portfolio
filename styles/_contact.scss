@@ -22,7 +22,7 @@
       height: 100%;
 
       .copy-email-name {
-        font-size: 5vw;
+        font-size: 4vw;
         text-align: right;
         text-decoration: underline;
         text-decoration-color: transparent;
@@ -61,7 +61,7 @@
     align-items: flex-end;
 
     .lets-connect-text {
-      font-size: 7vw;
+      font-size: 5vw;
       @include font-header;
     }
   }
