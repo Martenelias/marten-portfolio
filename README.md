@@ -10,8 +10,8 @@ Welcome to my portfolio! This project showcases my work as a web developer, feat
 ***Figma:*** The initial design and prototyping were done in Figma, allowing for a clean and consistent user interface. 
  
 ## Features 
-***Responsive Design:*** The portfolio is fully responsive, ensuring a seamless experience on any device, from mobile phones to desktops. 
-***Modern Aesthetics:*** Clean, minimalistic design with a focus on user experience. 
+***Responsive Design:*** The portfolio is fully responsive, ensuring a seamless experience on any device, from mobile phones to desktops.   
+***Modern Aesthetics:*** Clean, minimalistic design with a focus on user experience.   
 ***Interactive Elements:*** JavaScript-driven features add interactivity to the portfolio, enhancing the user experience. 
 
 ## Design and Inspiration 
