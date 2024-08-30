@@ -4,9 +4,9 @@
 Welcome to my portfolio! This project showcases my work as a web developer, featuring a responsive and modern design built with JavaScript and Sass. The design was carefully crafted using [Figma](https://www.figma.com/design/U61EAO7YAyEoVR1pXEde3d/Untitled?node-id=0-1&t=WkuNWTgE1zZbqGPs-1).  
 
 ## Technologies Used 
-***JavaScript:*** Provides interactivity and dynamic content throughout the site. 
-***Sass:*** Used for styling with a focus on modularity and ease of maintenance. 
-***HTML:*** The structure and backbone of the website. 
+***JavaScript:*** Provides interactivity and dynamic content throughout the site.   
+***Sass:*** Used for styling with a focus on modularity and ease of maintenance.   
+***HTML:*** The structure and backbone of the website.   
 ***Figma:*** The initial design and prototyping were done in Figma, allowing for a clean and consistent user interface. 
  
 ## Features 
