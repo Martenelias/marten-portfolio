@@ -19,14 +19,14 @@
     justify-content: center;
 
     h3 {
-      font-size: 3vw;
+      font-size: 3.5vw;
       text-align: right;
       padding-bottom: 1vh;
     }
 
     .about-me-text {
       @include font-body(600);
-      font-size: 1.2vw;
+      font-size: 2vw;
       text-align: justify;
     }
   }

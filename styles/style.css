@@ -226,7 +226,7 @@ nav ul li a:hover {
 }
 .projects {
   color: #1a2730;
-  height: 300vh;
+  height: 400vh;
 }
 .projects .projects-container {
   overflow: hidden;
@@ -248,7 +248,7 @@ nav ul li a:hover {
 .projects .projects-container .projects-box {
   position: absolute;
   top: 0;
-  width: 300vw;
+  width: 400vw;
   height: 100%;
   will-change: transform;
   display: flex;
@@ -387,7 +387,7 @@ nav ul li a:hover {
   justify-content: center;
 }
 .about .about-me h3 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-align: right;
   padding-bottom: 1vh;
 }
@@ -396,7 +396,7 @@ nav ul li a:hover {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.2vw;
+  font-size: 2vw;
   text-align: justify;
 }
 
